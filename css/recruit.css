@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	max-width: 640px;
+	max-height: 720px;
+	min-height: 640px;
+	height: 100vh;
+	overflow-y: auto;
+}
+.swiper-container{
+	height: 100%;
+}
+.swiper-slide{
+	height: 100%;
+	width: 100%;
+	/*overflow:hidden;*/
+	animation: puffIn 2s ease 0s 1 normal both;
+}
+.img{
+	width: 100%;
+	position: relative;
+	z-index: -1;
+}
+
+
+.index{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-top: 10%;
+	text-align: center;
+
+}
+.index>li{
+	list-style: none;
+	z-index: 1;
+	
+}
+
+@keyframes myAni1{
+	0%{
+		transform: scale(2,2);
+	}
+	100%{
+		transform: scale(1,1);
+	}
+}
+
+.myAni1{
+	animation-name: myAni1; 
+}
+.ani{
+	transition-timing-function: ease-in;
+}
+/*第一张图片样式*/
+/*------------------------------------------------------*/
+
+.profile{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	/*transform: translateY(-50%);*/
+	text-align: center;
+	z-index: 1;
+	margin-top: 5%;
+	background-color: white;
+	padding: 5%;
+	/*animation: zoomIn 1s ease 0s 1 normal both;*/
+	width: 75%;
+    height: 67%;
+	box-shadow: 3px 3px 3px grey;
+	opacity: 0.9;
+}
+.profile>h3{
+	font-family: "新宋体";
+	font-size: 25px;
+	margin-bottom: 5%;
+	/*animation: fadeIn 1s ease 1.4s 1 normal both;*/
+}
+.profile>p{
+	font-family: "宋体";
+	text-indent: 2em;
+	margin-top: 10%;
+	/*animation: fadeInDown 1s ease 1.6s 1 normal both;*/
+}
+.profile>img{
+	/*width: 100%;*/
+	margin-top: 10%;
+	/*animation: fadeInUp 1s ease 2.1s 1 normal both;*/
+}
+/*第二张图片*/
+/*-------------------------------------------------------------*/
+
+.places{
+	padding-top: 20%;
+	list-style: none;
+}
+.places>li{
+	padding: 15px;
+	border: 1px solid black;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+/*第三张图片*/
+/*---------------------------------------------------------------------*/
+
+.circle{
+	text-align: center;
+	width: 50%;   
+    padding: 5%;   
+    font: bold 20px "微软雅黑";   
+    color: #566F89;   
+    text-shadow: 2px 2px 0 #E4F1FF; 
+    margin: 0 auto;
+}
+ul>li{
+	list-style: none;
+}
+.job-detail{
+	padding-top: 10%;
+}
+.job-detail>li{
+	text-align: left;
+	width: 80%;
+	font-size: 15px;
+	padding-bottom: 10%;
+	margin:0 auto;
+}
+/*第四张图片*/
+/*-------------------------------------------------------------------------*/
+
+.welfare{
+	padding-top: 15%;
+}
+.welfare>li{
+	padding-top: 10%;
+	text-align: center;
+	font-size: 25px;
+	font-weight: lighter;
+}
+/*第五张图片*/
+/*--------------------------------------------------------------------------------*/
+
+.company-img{
+	height: 20%;
+}
+/*第六张图片*/
+/*---------------------------------------------------------------------------------*/
+
+.qr{
+	width: 80%;
+	padding-bottom: 10%;
+}
+.tip{
+	padding-top: 10%;
+	color: red;
+}
